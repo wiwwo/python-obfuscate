@@ -31,7 +31,7 @@ def obfuscate2(strInput):
   enc1=base64.b64encode (bytes(strInput, "utf-8") )
   enc2=''
   for x in range(0,len(enc1)):
-    randomEntr=''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(x))
+    randomEntr=''.join(random.choice(string.ascii_letters + string.digits) for _ in range(x))
     enc2+=chr(enc1[x])+randomEntr
   #print (enc2)
   return enc2

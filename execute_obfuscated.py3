@@ -10,6 +10,7 @@ import obfuscationFunc
 obfuscateMe="print ('CIAO!')"
 
 print ("\nClear command: "+obfuscateMe)
+print  ("Base64 command: "+str(base64.b64encode (bytes(obfuscateMe, "utf-8") )))
 
 obf=obfuscationFunc.obfuscate(obfuscateMe);
 print ("\nobfuscate\nObfuscated command: "+obf)
