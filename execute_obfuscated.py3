@@ -9,12 +9,20 @@ import obfuscationFunc
 
 obfuscateMe="print ('CIAO!')"
 
-obf=obfuscationFunc.obfuscate(obfuscateMe);
-print ("Obfuscated command: "+obf)
-cle=obfuscationFunc.clear(obf)
-#print (cle)
+print ("\nClear command: "+obfuscateMe)
 
+obf=obfuscationFunc.obfuscate(obfuscateMe);
+print ("\nobfuscate\nObfuscated command: "+obf)
+cle=obfuscationFunc.clear(obf)
+
+print ("Executing:")
 exec (obfuscationFunc.clear(obf))
 
+print ("---------------------------------------------------------")
 
-#exec (base64.b64decode("Zm9yIGtleSx2YWx1ZSBpbiBteURhdGEuY29weSgpLml0ZW1zKCk6CiAgaWYga2V5WzA6MV09PSdfJzogZGVsIG15RGF0YVtrZXld"))
+obf=obfuscationFunc.obfuscate2(obfuscateMe);
+print ("obfuscate2\nObfuscated command: "+obf)
+cle=obfuscationFunc.clear2(obf)
+
+print ("Executing:")
+exec (obfuscationFunc.clear2(obf))
