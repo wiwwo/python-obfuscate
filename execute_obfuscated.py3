@@ -27,3 +27,12 @@ cle=obfuscationFunc.clear2(obf)
 
 print ("Executing:")
 exec (obfuscationFunc.clear2(obf))
+
+print ("---------------------------------------------------------")
+
+obf=obfuscationFunc.obfuscate3(obfuscateMe);
+print ("obfuscate3\nObfuscated command: "+obf)
+cle=obfuscationFunc.clear3(obf)
+
+print ("Executing:")
+exec (obfuscationFunc.clear3(obf))
